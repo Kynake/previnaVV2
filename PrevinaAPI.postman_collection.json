@@ -1,0 +1,677 @@
+{
+	"variables": [],
+	"info": {
+		"name": "PrevinaAPI",
+		"_postman_id": "31c61103-f403-48bc-8d62-4cc0a8743791",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "user",
+			"description": "",
+			"item": [
+				{
+					"name": "AddUser homo",
+					"request": {
+						"url": "www.homo.ages.pucrs.br/previnaapi/users/cadastrarUsuarios",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ7XCJpZFwiOjIsXCJjcGZcIjpcIjEyMzQ1Njc4OTA5XCIsXCJlbWFpbFwiOlwiZnVsYW5vQGdtYWlsLmNvbVwiLFwibmFtZVwiOlwiRnVsYW5vIGRlIFRhbFwiLFwicGFzc3dvcmRcIjpcIjEwZTc3ZWYxN2JhYzA1YjU2OGMyN2VkN2YxZjU3ZjE4XCIsXCJwaG9uZVwiOm51bGwsXCJyb2xlXCI6bnVsbCxcImFjdGl2ZVwiOnRydWUsXCJ2YWxpZFwiOnRydWV9IiwiaWF0IjoxNTA1MjM1NzE0LCJleHAiOjE1MTM3ODU3MTR9.MVv7r7kqH6waCkvGan1KX5nEWM-Ok8zVPhFgeKln44CwKw3NFOkO_UD79zVTEOiZlSPvjB-XVsaWTxcE2LnNGw",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"cpf\": 111111111111,\n    \"email\": \"pedro@gmail.com\",\n    \"name\": \"Pedro\",\n    \"password\": \"cinco\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "AddUser",
+					"request": {
+						"url": "http://localhost:8080/previnaApi/users/cadastrarUsuarios",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ7XCJpZFwiOjIsXCJjcGZcIjpcIjEyMzQ1Njc4OTA5XCIsXCJlbWFpbFwiOlwiZnVsYW5vQGdtYWlsLmNvbVwiLFwibmFtZVwiOlwiRnVsYW5vIGRlIFRhbFwiLFwicGFzc3dvcmRcIjpcIjEwZTc3ZWYxN2JhYzA1YjU2OGMyN2VkN2YxZjU3ZjE4XCIsXCJwaG9uZVwiOm51bGwsXCJyb2xlXCI6bnVsbCxcImFjdGl2ZVwiOnRydWUsXCJ2YWxpZFwiOnRydWV9IiwiaWF0IjoxNTA1MjM1NzE0LCJleHAiOjE1MTM3ODU3MTR9.MVv7r7kqH6waCkvGan1KX5nEWM-Ok8zVPhFgeKln44CwKw3NFOkO_UD79zVTEOiZlSPvjB-XVsaWTxcE2LnNGw",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \n    \"cpf\": 85172596020,\n    \"email\": \"bruno@gmail.com\",\n    \"name\": \"Bruno\",\n    \"password\": \"cinco\",\n    \"profissao\":\"Psicologo\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "List User HOMO",
+					"request": {
+						"url": "www.homo.ages.pucrs.br/previnaapi/users/listarUsuarios",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ7XCJpZFwiOjIsXCJjcGZcIjpcIjEyMzQ1Njc4OTA5XCIsXCJlbWFpbFwiOlwiZnVsYW5vQGdtYWlsLmNvbVwiLFwibmFtZVwiOlwiRnVsYW5vIGRlIFRhbFwiLFwicGFzc3dvcmRcIjpcIjEwZTc3ZWYxN2JhYzA1YjU2OGMyN2VkN2YxZjU3ZjE4XCIsXCJwaG9uZVwiOm51bGwsXCJyb2xlXCI6bnVsbCxcImFjdGl2ZVwiOnRydWUsXCJ2YWxpZFwiOnRydWV9IiwiaWF0IjoxNTA1MjM1NzE0LCJleHAiOjE1MTM3ODU3MTR9.MVv7r7kqH6waCkvGan1KX5nEWM-Ok8zVPhFgeKln44CwKw3NFOkO_UD79zVTEOiZlSPvjB-XVsaWTxcE2LnNGw",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"cpf\": 111111111111,\n    \"email\": \"pedro@gmail.com\",\n    \"name\": \"Pedro\",\n    \"password\": \"cinco\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "ListUsers by ID",
+					"request": {
+						"url": "http://localhost:8080/modeloAPI/users/1",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ7XCJpZFwiOjEsXCJjcGZcIjpcIjExMTExMTExMTExMVwiLFwiZW1haWxcIjpcInBlZHJvQGdtYWlsLmNvbVwiLFwibmFtZVwiOlwiUGVkcm9cIixcInBhc3N3b3JkXCI6XCI2NGUzOGU3MGVmYjg0ZjkyNjU2OGQwNTIyYTEwNWMzM1wiLFwicGhvbmVcIjpudWxsLFwicm9sZVwiOlwiYW5hbHlzdFwiLFwiYWN0aXZlXCI6dHJ1ZSxcInZhbGlkXCI6dHJ1ZX0iLCJpYXQiOjE1MDQyOTEwOTgsImV4cCI6MTUwNDg5NTg5OH0.1mNrZ7Ob56meS9VjKnWfTdH9gqAtA-M1lBLsuWo0v6XAOAHJkvE5EL0Brsl3wejb1C_kleCQrK190UShxb9DkQ",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "ListUsers",
+					"request": {
+						"url": "http://localhost:8080/previnaApi/users/listarUsuarios",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ7XCJpZFwiOjIsXCJjcGZcIjpcIjEyMzQ1Njc4OTA5XCIsXCJlbWFpbFwiOlwiZnVsYW5vQGdtYWlsLmNvbVwiLFwibmFtZVwiOlwiRnVsYW5vIGRlIFRhbFwiLFwicGFzc3dvcmRcIjpcIjEwZTc3ZWYxN2JhYzA1YjU2OGMyN2VkN2YxZjU3ZjE4XCIsXCJwaG9uZVwiOm51bGwsXCJyb2xlXCI6bnVsbCxcImFjdGl2ZVwiOnRydWUsXCJ2YWxpZFwiOnRydWV9IiwiaWF0IjoxNTA1MjM1NzE0LCJleHAiOjE1MTM3ODU3MTR9.MVv7r7kqH6waCkvGan1KX5nEWM-Ok8zVPhFgeKln44CwKw3NFOkO_UD79zVTEOiZlSPvjB-XVsaWTxcE2LnNGw",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "editUser",
+					"request": {
+						"url": "http://localhost:8080/previnaApi/users/atualizarUsuario",
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ7XCJpZFwiOjIsXCJjcGZcIjpcIjEyMzQ1Njc4OTA5XCIsXCJlbWFpbFwiOlwiZnVsYW5vQGdtYWlsLmNvbVwiLFwibmFtZVwiOlwiRnVsYW5vIGRlIFRhbFwiLFwicGFzc3dvcmRcIjpcIjEwZTc3ZWYxN2JhYzA1YjU2OGMyN2VkN2YxZjU3ZjE4XCIsXCJwaG9uZVwiOm51bGwsXCJyb2xlXCI6bnVsbCxcImFjdGl2ZVwiOnRydWUsXCJ2YWxpZFwiOnRydWV9IiwiaWF0IjoxNTA1MjM1NzE0LCJleHAiOjE1MTM3ODU3MTR9.MVv7r7kqH6waCkvGan1KX5nEWM-Ok8zVPhFgeKln44CwKw3NFOkO_UD79zVTEOiZlSPvjB-XVsaWTxcE2LnNGw",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"cpf\": 85172596020,\n    \"email\": \"pedro@gmail.com\",\n    \"name\": \"Pedro\",\n    \"password\": \"cinco\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "faixa etaria",
+			"description": "",
+			"item": [
+				{
+					"name": "cadastrar Faixa Etaria ",
+					"request": {
+						"url": "http://localhost:8080/previnaApi/faixa-etaria/cadastrarFaixaEtaria",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ7XCJpZFwiOjIsXCJjcGZcIjpcIjEyMzQ1Njc4OTA5XCIsXCJlbWFpbFwiOlwiZnVsYW5vQGdtYWlsLmNvbVwiLFwibmFtZVwiOlwiRnVsYW5vIGRlIFRhbFwiLFwicGFzc3dvcmRcIjpcIjEwZTc3ZWYxN2JhYzA1YjU2OGMyN2VkN2YxZjU3ZjE4XCIsXCJwaG9uZVwiOm51bGwsXCJyb2xlXCI6bnVsbCxcImFjdGl2ZVwiOnRydWUsXCJ2YWxpZFwiOnRydWV9IiwiaWF0IjoxNTA1MjM1NzE0LCJleHAiOjE1MTM3ODU3MTR9.MVv7r7kqH6waCkvGan1KX5nEWM-Ok8zVPhFgeKln44CwKw3NFOkO_UD79zVTEOiZlSPvjB-XVsaWTxcE2LnNGw",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"4-5\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "cadastrar Faixa Etaria homo",
+					"request": {
+						"url": "www.homo.ages.pucrs.br/previnaapi/faixa-etaria/cadastrarFaixaEtaria",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ7XCJpZFwiOjIsXCJjcGZcIjpcIjEyMzQ1Njc4OTA5XCIsXCJlbWFpbFwiOlwiZnVsYW5vQGdtYWlsLmNvbVwiLFwibmFtZVwiOlwiRnVsYW5vIGRlIFRhbFwiLFwicGFzc3dvcmRcIjpcIjEwZTc3ZWYxN2JhYzA1YjU2OGMyN2VkN2YxZjU3ZjE4XCIsXCJwaG9uZVwiOm51bGwsXCJyb2xlXCI6bnVsbCxcImFjdGl2ZVwiOnRydWUsXCJ2YWxpZFwiOnRydWV9IiwiaWF0IjoxNTA1MjM1NzE0LCJleHAiOjE1MTM3ODU3MTR9.MVv7r7kqH6waCkvGan1KX5nEWM-Ok8zVPhFgeKln44CwKw3NFOkO_UD79zVTEOiZlSPvjB-XVsaWTxcE2LnNGw",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"grupo\": \"4-65\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "listar faixa etaria homo",
+					"request": {
+						"url": "www.homo.ages.pucrs.br/previnaapi/faixa-etaria/listarFaixaEtaria",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ7XCJpZFwiOjIsXCJjcGZcIjpcIjEyMzQ1Njc4OTA5XCIsXCJlbWFpbFwiOlwiZnVsYW5vQGdtYWlsLmNvbVwiLFwibmFtZVwiOlwiRnVsYW5vIGRlIFRhbFwiLFwicGFzc3dvcmRcIjpcIjEwZTc3ZWYxN2JhYzA1YjU2OGMyN2VkN2YxZjU3ZjE4XCIsXCJwaG9uZVwiOm51bGwsXCJyb2xlXCI6bnVsbCxcImFjdGl2ZVwiOnRydWUsXCJ2YWxpZFwiOnRydWV9IiwiaWF0IjoxNTA1MjM1NzE0LCJleHAiOjE1MTM3ODU3MTR9.MVv7r7kqH6waCkvGan1KX5nEWM-Ok8zVPhFgeKln44CwKw3NFOkO_UD79zVTEOiZlSPvjB-XVsaWTxcE2LnNGw",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"group\":\"8-10\"}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "listar faixa etaria",
+					"request": {
+						"url": "http://localhost:8080/previnaApi/faixa-etaria/listarFaixaEtaria",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ7XCJpZFwiOjIsXCJjcGZcIjpcIjEyMzQ1Njc4OTA5XCIsXCJlbWFpbFwiOlwiZnVsYW5vQGdtYWlsLmNvbVwiLFwibmFtZVwiOlwiRnVsYW5vIGRlIFRhbFwiLFwicGFzc3dvcmRcIjpcIjEwZTc3ZWYxN2JhYzA1YjU2OGMyN2VkN2YxZjU3ZjE4XCIsXCJwaG9uZVwiOm51bGwsXCJyb2xlXCI6bnVsbCxcImFjdGl2ZVwiOnRydWUsXCJ2YWxpZFwiOnRydWV9IiwiaWF0IjoxNTA1MjM1NzE0LCJleHAiOjE1MTM3ODU3MTR9.MVv7r7kqH6waCkvGan1KX5nEWM-Ok8zVPhFgeKln44CwKw3NFOkO_UD79zVTEOiZlSPvjB-XVsaWTxcE2LnNGw",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"group\":\"8-10\"}"
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "pergunta",
+			"description": "",
+			"item": [
+				{
+					"name": "cadastrar pergunta homo",
+					"request": {
+						"url": "www.homo.ages.pucrs.br/previnaapi/pergunta/cadastrarPergunta",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ7XCJpZFwiOjIsXCJjcGZcIjpcIjEyMzQ1Njc4OTA5XCIsXCJlbWFpbFwiOlwiZnVsYW5vQGdtYWlsLmNvbVwiLFwibmFtZVwiOlwiRnVsYW5vIGRlIFRhbFwiLFwicGFzc3dvcmRcIjpcIjEwZTc3ZWYxN2JhYzA1YjU2OGMyN2VkN2YxZjU3ZjE4XCIsXCJwaG9uZVwiOm51bGwsXCJyb2xlXCI6bnVsbCxcImFjdGl2ZVwiOnRydWUsXCJ2YWxpZFwiOnRydWV9IiwiaWF0IjoxNTA1MjM1NzE0LCJleHAiOjE1MTM3ODU3MTR9.MVv7r7kqH6waCkvGan1KX5nEWM-Ok8zVPhFgeKln44CwKw3NFOkO_UD79zVTEOiZlSPvjB-XVsaWTxcE2LnNGw",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " {\n        \"descricao\": \"Onde vive o coelho amarelo do sul da africa?\",\n        \"nivel\": 3,\n        \"eixo\": {\n        \n            \"id\": 8\n        },\n        \"ageGroup\": {\n            \"id\": 17\n        },\n        \"urlCapa\": \"http://jesus.com\",\n        \"premio\": 7000,\n        \"respostas\": [\n            {\n               \n                \"descricao\": \"Sul da africa\",\n                \"certo\": false\n            },\n            {\n               \n                \"descricao\": \"Norte da china\",\n                \"certo\": false\n            },\n             {\n               \n                \"descricao\": \"É num pais da europa\",\n                \"certo\": true\n            }\n        ]\n    }"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "cadastrar pergunta",
+					"request": {
+						"url": "http://localhost:8080/previnaApi/pergunta/cadastrarPergunta",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ7XCJpZFwiOjIsXCJjcGZcIjpcIjEyMzQ1Njc4OTA5XCIsXCJlbWFpbFwiOlwiZnVsYW5vQGdtYWlsLmNvbVwiLFwibmFtZVwiOlwiRnVsYW5vIGRlIFRhbFwiLFwicGFzc3dvcmRcIjpcIjEwZTc3ZWYxN2JhYzA1YjU2OGMyN2VkN2YxZjU3ZjE4XCIsXCJwaG9uZVwiOm51bGwsXCJyb2xlXCI6bnVsbCxcImFjdGl2ZVwiOnRydWUsXCJ2YWxpZFwiOnRydWV9IiwiaWF0IjoxNTA1MjM1NzE0LCJleHAiOjE1MTM3ODU3MTR9.MVv7r7kqH6waCkvGan1KX5nEWM-Ok8zVPhFgeKln44CwKw3NFOkO_UD79zVTEOiZlSPvjB-XVsaWTxcE2LnNGw",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " {\n        \"descricao\": \"Teste com 9 letras\",\n        \"nivel\": 3,\n        \"eixo\": {\n            \"id\": 2\n        },\n        \"ageGroup\": {\n            \"id\": 3\n         \n        },\n        \"urlCapa\": null,\n        \"premio\": 7000,\n        \"respostas\": [\n            {\n               \n                \"descricao\": \"Sul da africa\",\n                \"certo\": false\n            },\n            {\n               \n                \"descricao\": \"Norte da china\",\n                \"certo\": false\n            },\n             {\n               \n                \"descricao\": \"É num pais da europa\",\n                \"certo\": true\n            }\n        ]\n    }"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Listar Pergunta",
+					"request": {
+						"url": "http://localhost:8080/previnaApi/pergunta/listarPergunta",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ7XCJpZFwiOjIsXCJjcGZcIjpcIjEyMzQ1Njc4OTA5XCIsXCJlbWFpbFwiOlwiZnVsYW5vQGdtYWlsLmNvbVwiLFwibmFtZVwiOlwiRnVsYW5vIGRlIFRhbFwiLFwicGFzc3dvcmRcIjpcIjEwZTc3ZWYxN2JhYzA1YjU2OGMyN2VkN2YxZjU3ZjE4XCIsXCJwaG9uZVwiOm51bGwsXCJyb2xlXCI6bnVsbCxcImFjdGl2ZVwiOnRydWUsXCJ2YWxpZFwiOnRydWV9IiwiaWF0IjoxNTA1MjM1NzE0LCJleHAiOjE1MTM3ODU3MTR9.MVv7r7kqH6waCkvGan1KX5nEWM-Ok8zVPhFgeKln44CwKw3NFOkO_UD79zVTEOiZlSPvjB-XVsaWTxcE2LnNGw",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\":\"Nutrição\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Listar Pergunta homo",
+					"request": {
+						"url": "www.homo.ages.pucrs.br/previnaapi/pergunta/listarPergunta",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ7XCJpZFwiOjIsXCJjcGZcIjpcIjEyMzQ1Njc4OTA5XCIsXCJlbWFpbFwiOlwiZnVsYW5vQGdtYWlsLmNvbVwiLFwibmFtZVwiOlwiRnVsYW5vIGRlIFRhbFwiLFwicGFzc3dvcmRcIjpcIjEwZTc3ZWYxN2JhYzA1YjU2OGMyN2VkN2YxZjU3ZjE4XCIsXCJwaG9uZVwiOm51bGwsXCJyb2xlXCI6bnVsbCxcImFjdGl2ZVwiOnRydWUsXCJ2YWxpZFwiOnRydWV9IiwiaWF0IjoxNTA1MjM1NzE0LCJleHAiOjE1MTM3ODU3MTR9.MVv7r7kqH6waCkvGan1KX5nEWM-Ok8zVPhFgeKln44CwKw3NFOkO_UD79zVTEOiZlSPvjB-XVsaWTxcE2LnNGw",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\":\"Nutrição\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar Pergunta",
+					"request": {
+						"url": "http://localhost:8080/previnaApi/pergunta/buscarPergunta/4",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ7XCJpZFwiOjIsXCJjcGZcIjpcIjEyMzQ1Njc4OTA5XCIsXCJlbWFpbFwiOlwiZnVsYW5vQGdtYWlsLmNvbVwiLFwibmFtZVwiOlwiRnVsYW5vIGRlIFRhbFwiLFwicGFzc3dvcmRcIjpcIjEwZTc3ZWYxN2JhYzA1YjU2OGMyN2VkN2YxZjU3ZjE4XCIsXCJwaG9uZVwiOm51bGwsXCJyb2xlXCI6bnVsbCxcImFjdGl2ZVwiOnRydWUsXCJ2YWxpZFwiOnRydWV9IiwiaWF0IjoxNTA1MjM1NzE0LCJleHAiOjE1MTM3ODU3MTR9.MVv7r7kqH6waCkvGan1KX5nEWM-Ok8zVPhFgeKln44CwKw3NFOkO_UD79zVTEOiZlSPvjB-XVsaWTxcE2LnNGw",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Atualizar Pergunta",
+					"request": {
+						"url": "http://localhost:8080/previnaApi/pergunta/atualizarPergunta",
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ7XCJpZFwiOjIsXCJjcGZcIjpcIjEyMzQ1Njc4OTA5XCIsXCJlbWFpbFwiOlwiZnVsYW5vQGdtYWlsLmNvbVwiLFwibmFtZVwiOlwiRnVsYW5vIGRlIFRhbFwiLFwicGFzc3dvcmRcIjpcIjEwZTc3ZWYxN2JhYzA1YjU2OGMyN2VkN2YxZjU3ZjE4XCIsXCJwaG9uZVwiOm51bGwsXCJyb2xlXCI6bnVsbCxcImFjdGl2ZVwiOnRydWUsXCJ2YWxpZFwiOnRydWV9IiwiaWF0IjoxNTA1MjM1NzE0LCJleHAiOjE1MTM3ODU3MTR9.MVv7r7kqH6waCkvGan1KX5nEWM-Ok8zVPhFgeKln44CwKw3NFOkO_UD79zVTEOiZlSPvjB-XVsaWTxcE2LnNGw",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " {       \"id\":1,\n        \"descricao\": \"se eu ler tiltei2?\",\n        \"nivel\": 1,\n        \"urlCapa\": null,\n        \"premio\": 1000,\n        \"respostas\": [\n            {\n                \n                \"descricao\": \"Refrigerante de cola\",\n                \"certo\": true\n            },\n            {\n            \n                \"descricao\": \"É agua irmão\",\n                \"certo\": true\n            }\n        ]\n    }"
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "eixo",
+			"description": "",
+			"item": [
+				{
+					"name": "listar eixo",
+					"request": {
+						"url": "http://localhost:8080/previnaApi/eixo/listarEixo",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ7XCJpZFwiOjIsXCJjcGZcIjpcIjEyMzQ1Njc4OTA5XCIsXCJlbWFpbFwiOlwiZnVsYW5vQGdtYWlsLmNvbVwiLFwibmFtZVwiOlwiRnVsYW5vIGRlIFRhbFwiLFwicGFzc3dvcmRcIjpcIjEwZTc3ZWYxN2JhYzA1YjU2OGMyN2VkN2YxZjU3ZjE4XCIsXCJwaG9uZVwiOm51bGwsXCJyb2xlXCI6bnVsbCxcImFjdGl2ZVwiOnRydWUsXCJ2YWxpZFwiOnRydWV9IiwiaWF0IjoxNTA1MjM1NzE0LCJleHAiOjE1MTM3ODU3MTR9.MVv7r7kqH6waCkvGan1KX5nEWM-Ok8zVPhFgeKln44CwKw3NFOkO_UD79zVTEOiZlSPvjB-XVsaWTxcE2LnNGw",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"group\":\"8-10\"}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "listar eixo Homo",
+					"request": {
+						"url": "www.homo.ages.pucrs.br/previnaapi/eixo/listarEixo",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ7XCJpZFwiOjIsXCJjcGZcIjpcIjEyMzQ1Njc4OTA5XCIsXCJlbWFpbFwiOlwiZnVsYW5vQGdtYWlsLmNvbVwiLFwibmFtZVwiOlwiRnVsYW5vIGRlIFRhbFwiLFwicGFzc3dvcmRcIjpcIjEwZTc3ZWYxN2JhYzA1YjU2OGMyN2VkN2YxZjU3ZjE4XCIsXCJwaG9uZVwiOm51bGwsXCJyb2xlXCI6bnVsbCxcImFjdGl2ZVwiOnRydWUsXCJ2YWxpZFwiOnRydWV9IiwiaWF0IjoxNTA1MjM1NzE0LCJleHAiOjE1MTM3ODU3MTR9.MVv7r7kqH6waCkvGan1KX5nEWM-Ok8zVPhFgeKln44CwKw3NFOkO_UD79zVTEOiZlSPvjB-XVsaWTxcE2LnNGw",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"group\":\"8-10\"}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "editEixo",
+					"request": {
+						"url": "http://localhost:8080/previnaApi/eixo/atualizarEixo",
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ7XCJpZFwiOjIsXCJjcGZcIjpcIjEyMzQ1Njc4OTA5XCIsXCJlbWFpbFwiOlwiZnVsYW5vQGdtYWlsLmNvbVwiLFwibmFtZVwiOlwiRnVsYW5vIGRlIFRhbFwiLFwicGFzc3dvcmRcIjpcIjEwZTc3ZWYxN2JhYzA1YjU2OGMyN2VkN2YxZjU3ZjE4XCIsXCJwaG9uZVwiOm51bGwsXCJyb2xlXCI6bnVsbCxcImFjdGl2ZVwiOnRydWUsXCJ2YWxpZFwiOnRydWV9IiwiaWF0IjoxNTA1MjM1NzE0LCJleHAiOjE1MTM3ODU3MTR9.MVv7r7kqH6waCkvGan1KX5nEWM-Ok8zVPhFgeKln44CwKw3NFOkO_UD79zVTEOiZlSPvjB-XVsaWTxcE2LnNGw",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 6,\n   \n    \"name\": \"Pedro\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "cadastrar Eixo",
+					"request": {
+						"url": "http://localhost:8080/previnaApi/eixo/cadastrarEixo",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ7XCJpZFwiOjIsXCJjcGZcIjpcIjEyMzQ1Njc4OTA5XCIsXCJlbWFpbFwiOlwiZnVsYW5vQGdtYWlsLmNvbVwiLFwibmFtZVwiOlwiRnVsYW5vIGRlIFRhbFwiLFwicGFzc3dvcmRcIjpcIjEwZTc3ZWYxN2JhYzA1YjU2OGMyN2VkN2YxZjU3ZjE4XCIsXCJwaG9uZVwiOm51bGwsXCJyb2xlXCI6bnVsbCxcImFjdGl2ZVwiOnRydWUsXCJ2YWxpZFwiOnRydWV9IiwiaWF0IjoxNTA1MjM1NzE0LCJleHAiOjE1MTM3ODU3MTR9.MVv7r7kqH6waCkvGan1KX5nEWM-Ok8zVPhFgeKln44CwKw3NFOkO_UD79zVTEOiZlSPvjB-XVsaWTxcE2LnNGw",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"group\":\"8-10\"}"
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "conteudo",
+			"description": "",
+			"item": [
+				{
+					"name": "cadastrar conteudo",
+					"request": {
+						"url": "www.localhost:8080/previnaApi/conteudo/cadastrarConteudo",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ7XCJpZFwiOjIsXCJjcGZcIjpcIjEyMzQ1Njc4OTA5XCIsXCJlbWFpbFwiOlwiZnVsYW5vQGdtYWlsLmNvbVwiLFwibmFtZVwiOlwiRnVsYW5vIGRlIFRhbFwiLFwicGFzc3dvcmRcIjpcIjEwZTc3ZWYxN2JhYzA1YjU2OGMyN2VkN2YxZjU3ZjE4XCIsXCJwaG9uZVwiOm51bGwsXCJyb2xlXCI6bnVsbCxcImFjdGl2ZVwiOnRydWUsXCJ2YWxpZFwiOnRydWV9IiwiaWF0IjoxNTA1MjM1NzE0LCJleHAiOjE1MTM3ODU3MTR9.MVv7r7kqH6waCkvGan1KX5nEWM-Ok8zVPhFgeKln44CwKw3NFOkO_UD79zVTEOiZlSPvjB-XVsaWTxcE2LnNGw",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " {  \n         \"name\":\"conteudo\",\n         \"descricao\":\"descricao do conteudo\",\n         \"linkImg\":\"ffffffff\",\n         \"ageGroup\":{  \n            \"id\":3\n         },\n         \"eixo\":{  \n            \"id\":2\n         }\n      }\n"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "listar Conteudo",
+					"request": {
+						"url": "www.localhost:8080/previnaApi/conteudo/listarConteudo",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ7XCJpZFwiOjIsXCJjcGZcIjpcIjEyMzQ1Njc4OTA5XCIsXCJlbWFpbFwiOlwiZnVsYW5vQGdtYWlsLmNvbVwiLFwibmFtZVwiOlwiRnVsYW5vIGRlIFRhbFwiLFwicGFzc3dvcmRcIjpcIjEwZTc3ZWYxN2JhYzA1YjU2OGMyN2VkN2YxZjU3ZjE4XCIsXCJwaG9uZVwiOm51bGwsXCJyb2xlXCI6bnVsbCxcImFjdGl2ZVwiOnRydWUsXCJ2YWxpZFwiOnRydWV9IiwiaWF0IjoxNTA1MjM1NzE0LCJleHAiOjE1MTM3ODU3MTR9.MVv7r7kqH6waCkvGan1KX5nEWM-Ok8zVPhFgeKln44CwKw3NFOkO_UD79zVTEOiZlSPvjB-XVsaWTxcE2LnNGw",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " {  \n         \"name\":\"conteudo\",\n         \"descricao\":\"descricao do conteudo\",\n         \"linkImg\":\"ffffffff\",\n         \"ageGroup\":{  \n            \"id\":2\n         },\n         \"eixo\":{  \n            \"id\":2\n         }\n      }\n"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "listar Conteudo homo",
+					"request": {
+						"url": "www.homo.ages.pucrs.br/previnaapi/conteudo/listarConteudo",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ7XCJpZFwiOjIsXCJjcGZcIjpcIjEyMzQ1Njc4OTA5XCIsXCJlbWFpbFwiOlwiZnVsYW5vQGdtYWlsLmNvbVwiLFwibmFtZVwiOlwiRnVsYW5vIGRlIFRhbFwiLFwicGFzc3dvcmRcIjpcIjEwZTc3ZWYxN2JhYzA1YjU2OGMyN2VkN2YxZjU3ZjE4XCIsXCJwaG9uZVwiOm51bGwsXCJyb2xlXCI6bnVsbCxcImFjdGl2ZVwiOnRydWUsXCJ2YWxpZFwiOnRydWV9IiwiaWF0IjoxNTA1MjM1NzE0LCJleHAiOjE1MTM3ODU3MTR9.MVv7r7kqH6waCkvGan1KX5nEWM-Ok8zVPhFgeKln44CwKw3NFOkO_UD79zVTEOiZlSPvjB-XVsaWTxcE2LnNGw",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " {  \n         \"name\":\"conteudo\",\n         \"descricao\":\"descricao do conteudo\",\n         \"linkImg\":\"ffffffff\",\n         \"ageGroup\":{  \n            \"id\":2\n         },\n         \"eixo\":{  \n            \"id\":2\n         }\n      }\n"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "cadastrar conteudo Homo",
+					"request": {
+						"url": "www.homo.ages.pucrs.br/previnaapi/conteudo/cadastrarConteudo",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ7XCJpZFwiOjIsXCJjcGZcIjpcIjEyMzQ1Njc4OTA5XCIsXCJlbWFpbFwiOlwiZnVsYW5vQGdtYWlsLmNvbVwiLFwibmFtZVwiOlwiRnVsYW5vIGRlIFRhbFwiLFwicGFzc3dvcmRcIjpcIjEwZTc3ZWYxN2JhYzA1YjU2OGMyN2VkN2YxZjU3ZjE4XCIsXCJwaG9uZVwiOm51bGwsXCJyb2xlXCI6bnVsbCxcImFjdGl2ZVwiOnRydWUsXCJ2YWxpZFwiOnRydWV9IiwiaWF0IjoxNTA1MjM1NzE0LCJleHAiOjE1MTM3ODU3MTR9.MVv7r7kqH6waCkvGan1KX5nEWM-Ok8zVPhFgeKln44CwKw3NFOkO_UD79zVTEOiZlSPvjB-XVsaWTxcE2LnNGw",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " {  \n         \"name\":\"conteudo\",\n         \"descricao\":\"descricao do conteudo\",\n         \"linkImg\":\"ffffffff\",\n         \"ageGroup\":{  \n            \"id\":18\n         },\n         \"eixo\":{  \n            \"id\":5\n         }\n      }\n"
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "util",
+			"description": "",
+			"item": [
+				{
+					"name": "Login local",
+					"request": {
+						"url": "http://localhost:8080/previnaApi/auth/login",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"cpf\":\"111111111111\",\"password\":\"cinco\"}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Token",
+					"request": {
+						"url": "http://localhost:8080/previnaApi/auth/login",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"cpf\": \"111111111111\",\n    \"password\": \"cinco\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Works",
+					"request": {
+						"url": "http://localhost:8080/previnaApi",
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

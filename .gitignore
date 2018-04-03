@@ -1,0 +1,11 @@
+.idea/artifacts/
+.idea/dictionaries/
+.idea/libraries/
+.idea/dataSources.local.xml
+.idea/dataSources.xml
+.idea/inspectionProfiles/
+.idea/workspace.xml
+previna.iml
+target/
+/.idea/codeStyleSettings.xml
+:wq
