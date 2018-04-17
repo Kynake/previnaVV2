@@ -1,0 +1,9 @@
+language: java
+sudo: false
+install: true
+
+addons:
+  sonarcloud:
+    organization: "kynake-github"
+    token: 
+      secure: "GMtSBu8MFyFvZ2mLuxHZ9Q"
