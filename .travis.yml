@@ -1,4 +1,9 @@
 language: java
+jdk:
+    - oraclejdk8
+    
+script: mvn test -f ./previnaApi/pom.xml
+
 sudo: false
 install: true
 
