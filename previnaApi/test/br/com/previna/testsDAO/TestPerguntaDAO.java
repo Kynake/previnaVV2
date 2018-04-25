@@ -22,6 +22,8 @@ import static org.junit.Assert.assertTrue;
  * @author bruno.mazzardo
  * Classe para teste do DAO Hibernate
  */
+
+/**
 public class TestPerguntaDAO {
 
     Pergunta pergunta;
@@ -44,4 +46,4 @@ public class TestPerguntaDAO {
         perguntaDAO.save(pergunta);
     }
 }
-
+*/

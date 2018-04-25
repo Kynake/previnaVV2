@@ -17,6 +17,7 @@ import static org.junit.Assert.assertTrue;
  * @author bruno.mazzardo
  * Classe para teste do DAO Hibernate
  */
+/**
 public class TestUserDAO {
 
     @Rule
@@ -34,3 +35,4 @@ public class TestUserDAO {
     }
 }
 
+*/

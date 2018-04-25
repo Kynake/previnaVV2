@@ -10,6 +10,7 @@ import java.util.List;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 
+/**
 public class testAgeGroupDAO {
     @Test
     public void testCreationTableAgeGroup() {
@@ -24,3 +25,5 @@ public class testAgeGroupDAO {
         assertTrue(userList.size() > 0);
     }
 }
+
+*/
